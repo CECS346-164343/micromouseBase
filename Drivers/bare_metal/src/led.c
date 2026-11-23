@@ -6,7 +6,6 @@
   */
 
  #include "led.h"
- #include "GPIO.h"
 
  void enable_GPIOA(void){
     //Enable clock
