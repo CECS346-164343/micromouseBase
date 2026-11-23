@@ -94,10 +94,13 @@ int main(void)
 void StartDefaultTask(void *argument)
 {
   /* Infinite loop */
-
+  enable_GPIOA();
   while(1)
   {
-
+    led_high();
+    osDelay(1000);
+    led_low();
+    osDelay(1000);
   }
 }
 

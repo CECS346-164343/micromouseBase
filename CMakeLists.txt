@@ -19,7 +19,7 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 # Set the project name
-set(CMAKE_PROJECT_NAME micro_mouse)
+set(CMAKE_PROJECT_NAME adam_mouse)
 
 # Enable compile command to ease indexing with e.g. clangd
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
@@ -51,7 +51,7 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 )
 
 file(GLOB_RECURSE USER_SOURCES CONFIGURE_DEPENDS
-    "${CMAKE_SOURCE_DIR}/Drivers/I_hate_bare_metal_HALs/src/*.c"
+    # "${CMAKE_SOURCE_DIR}/Drivers/I_hate_bare_metal_HALs/src/*.c"
     "${CMAKE_SOURCE_DIR}/Drivers/bare_metal/src/*.c"
     "${CMAKE_SOURCE_DIR}/Core/Src/*.cpp"
 )
