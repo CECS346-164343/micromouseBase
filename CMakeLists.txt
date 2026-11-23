@@ -51,7 +51,7 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 )
 
 file(GLOB_RECURSE USER_SOURCES CONFIGURE_DEPENDS
-    "${CMAKE_SOURCE_DIR}/Drivers/I_hate_bare_metal_HALs/src/*.c"
+    # "${CMAKE_SOURCE_DIR}/Drivers/I_hate_bare_metal_HALs/src/*.c"
     "${CMAKE_SOURCE_DIR}/Drivers/bare_metal/src/*.c"
     "${CMAKE_SOURCE_DIR}/Core/Src/*.cpp"
 )
